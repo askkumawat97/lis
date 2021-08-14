@@ -1,0 +1,49 @@
+NAME			INDEX	DEFAULT |VALUE	0	1		2		3		4		5	6		7	8
+												
+help/version		[0]	0		other	help		version						
+normal files		[1]	1		hide	show							
+backup files		[2]	1		hide	show							
+hidden files		[3]	0		hide	show							
+dot files		[4]	0		hide	show							
+recursion		[5]	0		no	yes							
+reverse			[6]	0		no	yes							
+directory		[7]	0		no	yes							
+context			[8]	0		none	?							
+-s			[9]	0		hide	show							
+long listing exist	[10]	0		no	yes							
+
+permission		[11]	0		hide	show							
+author			[12]	0		hide	show							
+St-mode			[13]	0		hide	show							
+St-inode		[14]	0		hide	show							
+St-dev			[15]	0		hide	show							
+St-rdev			[16]	0		hide	show							
+St-hlink		[17]	0		hide	show							
+St-uid			[18]	0		hide	string		numeric						
+St-gid			[19]	0		hide	string		numeric						
+St-size			[20]	0		hide	show							
+St-time			[21]	0		hide	mtime		ctime		atime					
+Time-style		[22]	5		hide	+format		Full-iso	Long-iso	iso		locale			
+St-blocks		[23]	0		0	1000		1024						
+
+Blksize-coeff 1st half	[24]	1	coeff									
+Blksize-coeff 2nd half	[25]	1	coeff									
+Blksize-base		[26]	1	base									
+Blksize-exp		[27]	1	exp									
+size			[28]	0		none	Blk-size	--si		-h					
+width			[29]	0	width									
+tabsize			[30]	8	tabsize									
+
+sort			[31]	1		none	name		atime		mtime		ctime		size	version		ext	dir first
+with -l			[32]	0		none	name							
+with -lt		[33]	0		none					mtime					
+
+seperator		[34]	0		none	comma		newline						
+indicator		[35]	0		none	slash		File-type	classify					
+quot			[36]	0		none	'		“		"					
+Esc-seq			[37]	1		none	'		“		"		\ at esc-seq				
+flow			[38]	2		none	horizontal	vertical						
+hyperlink		[39]	0		none	auto		always						
+color			[40]	0		none	auto		always						
+BLANK			[41]	0										
+

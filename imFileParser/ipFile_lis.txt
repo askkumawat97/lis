@@ -1,0 +1,60 @@
+
+####--------------------------------------------------------------------------+
+##                                                                            |
+##    PREREQUISITE FILE USED TO GET INPUT FROM USER.                          |
+##    THIS FILE ALLOWS ONLY 7 LISTS WITH PROPER FORMAT AND SEQUENCE.          |
+##    EXCEPT THIS HELP BOX AND 6 LISTS,OTHER CONTAINT MAKES THE FILE USELESS. |
+##    ALL STRINGS ARE CASE SENSITIVE.                                         |
+##                                                                            |
+##    / is used for synonims for arguments only                               |
+##    below is the format for list notation                                   |
+##    list_name = {no. of ele(N), comma seperaed N elements}                  |
+##                                                                            |
+##    shiphen = {} is list of single hiphen options                           |
+##    null    = {} is list of options having no arguments                     |
+##    pattern = {} is list of options having arguments = PATTERN              |
+##    cols    = {} is list of options having arguments =COLS                  |
+##    size    = {} is list of options having arguments =SIZE                  |
+##    word    = {} is list of options having arguments =WORD/[=WHEN]          |
+##		for word{}, each options is list of arguments, eg.            |
+##		word = {3                                                     |
+##			opt1 = {2, arg0, arg1},                               |
+##			opt2 = {1, arg0},                                     |
+##			opt3 = {3, arg0, arg1, arg2}                          |
+##		}                                                             |
+##    optionalArg = {} is list of indexes in word{},                          |
+##                  that have optional arguments                              |
+##                                                                            |
+##    The example is as below for 'ls' command.                               |
+##                                                                            |
+####--------------------------------------------------------------------------+
+
+
+shiphen	= {41, A, B, C, D, F, G, H, I, L, N, O, P, Q, R, S, T, U, X, Z, 
+	a, b, c, d, f, g, h, i, k, l, m, n, o, p, q, r, s, t, u, v, w, x}
+
+null 	= {30, all, almost-all, author, classify, context, dereference, dereference-command-line, 
+	dereference-command-line-symlink-to-dir, directory, dired, escape, file-type, full-time, 
+	group-directories-first, help, hide-control-chars, human-readable, ignore-backups, inode, 
+	kibibytes, literal, no-group, numeric-uid-gid, recursive, reverse, show-control-chars, 
+	si, size, quote-name, version}
+
+pattern	= {2, hide, ignore}
+cols	= {2, tabsize, width}
+size	= {1, block-size}
+
+word	= {8,
+	format		= {5, verbose/long, commas, horizontal/across, vertical, single-column},
+	indicator-style	= {4, none, slash, file-type, classify},
+	sort 		= {5, none, time, size, extension, version},
+	time 		= {2, atime/access/use, ctime/status},
+	time-style	= {4, full-iso, long-iso, iso, locale},
+	quoting-style	= {10, literal, shell, shell-always, shell-escape, shell-escape-always, 
+			c, c-maybe, escape, locale, clocale},
+	color		= {3, always/yes/force, never/no/none, auto/tty/if-tty},
+	hyperlink	= {3, always/yes/force, never/no/none, auto/tty/if-tty}
+}
+
+optionalArg = {2, 6, 7}
+
+

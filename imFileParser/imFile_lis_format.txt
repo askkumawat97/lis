@@ -1,0 +1,18 @@
+STR (sorted characters of shiphens, chars(1, 65-127))
+NUM0
+[NUM0 lines of sorted string of dhiphens]
+	prefix + no args
+	prefix = mendetory args
+	prefix @ optional args
+NUM1
+[NUM1 lines of indexes of dhiphen with args =PATTERN]
+NUM2
+[NUM1 lines of indexes of dhiphen with args =COLS]
+NUM3
+[NUM1 lines of indexes of dhiphen with args =SIZE]
+NUM4
+[NUM1 lines of indexes of dhiphen with args =WORD]
+[NUM1 lists of arguments, each of below type]
+	NUM_x
+	[NUM_x lines of strings of arguments]
+
