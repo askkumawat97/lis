@@ -10,6 +10,7 @@
 
 #include"lis_print.c"
 
+//representing a single file/dir
 struct set {
 	int esc_seq;	//indicator, quoting
 	int blocks;

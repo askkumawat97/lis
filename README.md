@@ -21,6 +21,7 @@ If invalid arguments, it gives error message,
 Otherwise, valid arguments filled in struct beta and passed to PASS_1.
 
 struct beta contents, filled by command parser.
+one node for one option, len=no. of args
 
 description          |   flag  indOpt  argStr  coeff   num2   num1
 ---------------------+---------------------------------------------------------------------
